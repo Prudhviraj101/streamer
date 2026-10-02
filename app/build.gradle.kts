@@ -27,7 +27,7 @@ android {
             properties.load(localPropertiesFile.inputStream())
         }
         
-        buildConfigField("String", "TMDB_API_KEY", "\"${properties.getProperty("TMDB_API_KEY", "d661b6770340a0482c4a2716f2f390cb")}\"")
+        buildConfigField("String", "TMDB_API_KEY", "\"${properties.getProperty("TMDB_API_KEY", "")}\"")
         buildConfigField("String", "TMDB_BASE_URL", "\"https://api.themoviedb.org/3/\"")
         buildConfigField("String", "TMDB_IMAGE_BASE_URL", "\"https://image.tmdb.org/t/p/\"")
     }
